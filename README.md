@@ -62,6 +62,25 @@ For a simpler chat interface:
 python3 chat.py
 ```
 
+## Interactive Demo: Sample Queries
+
+The `sample_queries.md` file contains a curated list of prompts designed to push the MoE architecture to its limits. These are categorized by the specific "routing behavior" they trigger:
+
+### 1. Category 1: Multi-Domain Mastery
+**Goal**: Show how MoE handles complex, multi-stage reasoning.
+*   **Example**: *Cross-Domain Analogy Bridge* (CAP Theorem vs. Quantum Mechanics).
+*   **What to watch**: Observe the **Heatmap**; you'll see different clusters of experts light up as the model shifts from technical theory to creative analogy.
+
+### 2. Category 2: The "Jolt Factor" (Money Shots)
+**Goal**: Force the router to pivot hard mid-response.
+*   **Example**: *Medical Latin → Nursery Rhyme → CUDA Kernel*.
+*   **What to watch**: Watch the **VU Meters**; the transition points between these wildly different domains (Medical vs. Code vs. Verse) cause the meters to spike into the red as the gating network re-routes in real-time.
+
+### 3. Category 3: Minimal Activation (The Contrast)
+**Goal**: Show what happens when a task is simple and monotonous.
+*   **Example**: *Pure Numeric Sequence* or *CSV Generation*.
+*   **What to watch**: The heatmap should collapse to just **2-3 hot rows**, proving that MoE is "lazy"—it only uses the compute it actually needs for the task at hand.
+
 ## How it Works
 
 In a standard Transformer, every token passes through the same Feed-Forward Network (FFN). In a MoE model like Granite 3.0, that FFN is replaced by **40 independent experts**. 
