@@ -1,0 +1,18 @@
+services:
+  moe-glassbox:
+    build: .
+    container_name: granite-moe-demo
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - HF_HOME=/app/cache
+    volumes:
+      - .:/app
+    stdin_open: true 
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
