@@ -17,7 +17,6 @@ Using IBM's **Granite 3.0 3B-A800M**, this project attaches PyTorch forward hook
 - `chat.py`: A simple CLI interface for interacting with the MoE model.
 - `heatmap.py`: Logic for rendering the expert activation heatmaps.
 - `inspect_model.py`: Utility to explore the model's layer structure and identify router components.
-- `talktrack.md`: The narrative guide used for live demonstrations.
 
 ## Getting Started
 
